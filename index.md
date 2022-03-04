@@ -6,7 +6,7 @@ Whole Body Control (WBC), also referred to as constraint-based or optimization-b
 The term was coined by Luis Sentis in his work
 [Synthesis and Control of Whole-Body Behaviors in Humanoid Systems](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.73.8747&rep=rep1&type=pdf).
 
-<img src="images/wbc_principle.png" alt="drawing" width="600"/>
+<img src="images/wbc_principle.svg" alt="drawing" width="600"/>
 
 Image Credits: Dennis Mronga, DFKI
 
