@@ -1,1 +1,1 @@
-##  [ARC-OPT Documentation](https://arc-opt.github.io/ARC-OPT/)
+##  [ARC-OPT Documentation](https://arc-opt.github.io/Documentation/)
