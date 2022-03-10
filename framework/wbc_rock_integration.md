@@ -1,4 +1,4 @@
-<img src="../images/wbc_rock_integration.jpg" width="500" height="350" />
+<img src="../images/wbc_rock_integration.svg" width="500" height="350" />
 
 Although WBC can also be used for simple Cartesian position control, it is meant to be used in cases where a robot has to fulfill more than one task in parallel. The idea of the ROCK implementation of WBC is that each task is described by a controller and a corresponding constraint in WBC. Each controller regulates the task, while WBC merges the control output signals of all controllers into a coherent joint control signal for the robot that tries to fulfill all tasks if possible. Tasks can be assigned priorities to describe their importance in relation to other tasks.
 

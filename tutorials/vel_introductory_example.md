@@ -6,6 +6,10 @@ As shown [here](https://git.hb.dfki.de/dfki-control/wbc/documentation/-/wikis/WB
 
 This tutorial can be found in [tutorials/kuka_iiwa/cart_pos_ctrl_hls.cpp](https://github.com/ARC-OPT/wbc/blob/master/tutorials/kuka_iiwa/cart_pos_ctrl_hls.cpp), documentation can be found [here](http://bob.dfki.uni-bremen.de/apis/dfki-control/wbc/wbc/cart__pos__ctrl__hls_8cpp.html).
 
-![tutorial_01](../videos/tutorial_01.mp4)
+
+<video width="320" height="240" controls>
+   <source type="video/mp4"  src="https://raw.githubusercontent.com/ARC-OPT/ARC-OPT/master/videos/tutorial_01.mp4"/>
+</video>
+
 
 In the video, the upper plot shows the joint velocity of joint 4 (elbow), the lower plot shows the setpoint and actual position (only z-axis).
