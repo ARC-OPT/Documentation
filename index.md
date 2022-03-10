@@ -1,4 +1,4 @@
-# Documentation
+# Introduction
 
 ### Whole-Body Control
 
