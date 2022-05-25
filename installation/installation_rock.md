@@ -21,7 +21,7 @@
     ```bash
     mkdir ~/rock && cd ~/rock
     wget http://rock-robotics.org/autoproj_bootstrap
-    ruby autoproj_bootstrap git git@git.hb.dfki.de:dfki-control/wbc/buildconf.git
+    ruby autoproj_bootstrap git git@github.com:ARC-OPT/buildconf.git
     ```
 
     Source you environment
