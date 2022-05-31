@@ -39,7 +39,8 @@
     Update and compile
 
     ```bash
-    aup
+    aup orogen/wbc
+    aup orogen/ctrl_lib
     ```
 
     Select default options everywhere. In order to speed up the build process you can select: 
