@@ -5,7 +5,7 @@
     sudo apt-get install ruby-dev git build-essential cmake
     ```
 
-2. If not done yet, setup a ssh key pair using the command `ssh-keygen` and add the key from `~/.ssh/id_rsa.pub ` to the keys in your Gitlab account.  
+2. If not done yet, setup a ssh key pair using the command `ssh-keygen` and add the key from `~/.ssh/id_rsa.pub ` to the keys in your Github account.  
 
 3. If not done yet, setup your gitconfig
 
