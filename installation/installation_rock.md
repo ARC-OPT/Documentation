@@ -36,12 +36,12 @@
     echo "source ~/rock/env.sh" >> ~/.bashrc
     ```
    
-    Update and compile
+    Update
 
     ```bash
     aup orogen/wbc
     aup orogen/ctrl_lib
-    ```
+    ```  
 
     Select default options everywhere. In order to speed up the build process you can select: 
 
@@ -49,6 +49,8 @@
     Do you want to use icecc for compiling sources [yes/no] [no] yes
     Do you want to use ccache for compiling sources [yes/no] [no] yes
     ```
+    
+    Build
     
     ```bash
     amake orogen/wbc
