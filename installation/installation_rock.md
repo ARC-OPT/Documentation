@@ -2,7 +2,7 @@
 
 1. Install pre-requisites
     ```bash
-    sudo apt-get install ruby-dev git build-essential
+    sudo apt-get install ruby-dev git build-essential cmake
     ```
 
 2. If not done yet, setup a ssh key pair using the command `ssh-keygen` and add the key from `~/.ssh/id_rsa.pub ` to the keys in your Gitlab account.  
@@ -42,11 +42,14 @@
     aup
     ```
 
-    Select the following options (default everywhere else):
+    Select default options everywhere. In order to speed up the build process you can select: 
 
     ```bash
-    How should I interact with github.com? git
-    How should I interact with git.hb.dfki.de? ssh
-    Which flavor of Rock do you want to use? master
-    Whether C++11 should be enabled for Rock packages? yes
+    Do you want to use icecc for compiling sources [yes/no] [no] yes
+    Do you want to use ccache for compiling sources [yes/no] [no] yes
+    ```
+    
+    ```bash
+    amake orogen/wbc
+    amake orogen/ctrl_lib
     ```
