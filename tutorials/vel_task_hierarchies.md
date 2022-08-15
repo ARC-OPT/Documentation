@@ -4,9 +4,9 @@ The example can be found in [tutorials/kuka_iiwa/cart_pos_ctrl_hls_hierarchies.c
 
 Fixed joint 5 position on highest priority:<br>
 <video width="320" height="240" controls>
-   <source type="video/mp4"  src="https://raw.githubusercontent.com/ARC-OPT/ARC-OPT/testing_doc/videos/task_hierarchies_1.mp4"/>
+   <source type="video/mp4"  src="https://raw.githubusercontent.com/ARC-OPT/ARC-OPT/master/videos/task_hierarchies_1.mp4"/>
 </video>
 Fixed joint 5 position on lower priority:<br>
 <video width="320" height="240" controls>
-   <source type="video/mp4"  src="https://raw.githubusercontent.com/ARC-OPT/ARC-OPT/testing_doc/videos/task_hierarchies_2.mp4"/>
+   <source type="video/mp4"  src="https://raw.githubusercontent.com/ARC-OPT/ARC-OPT/master/videos/task_hierarchies_2.mp4"/>
 </video>
