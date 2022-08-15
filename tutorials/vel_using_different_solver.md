@@ -8,7 +8,7 @@ This tutorial is identical to tutorial 01, except that we use a different solver
 ### Use QPOases to limit the joint velocities
 
 <video width="320" height="240" controls>
-   <source type="video/mp4"  src="https://raw.githubusercontent.com/ARC-OPT/ARC-OPT/testing_doc/videos/tutorial_02.mp4"/>
+   <source type="video/mp4"  src="https://raw.githubusercontent.com/ARC-OPT/ARC-OPT/master/videos/tutorial_02.mp4"/>
 </video>
 
 In the video, again the upper plot shows the joint velocity of joint 4 (elbow), the lower plot shows the setpoint and actual position (only z-axis). As it can be seen the joint velocity of joint 4 is now bounded to the maximum joint velocity set in the URDF file (approx. 1.3 rad/s).
