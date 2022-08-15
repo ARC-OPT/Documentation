@@ -6,20 +6,20 @@ This tutorial shows the effect of modifying the task weights and joint weights. 
 
 All task weights are set to 1:<br>
 <video width="320" height="240" controls>
-   <source type="video/mp4"  src="https://raw.githubusercontent.com/ARC-OPT/ARC-OPT/testing_doc/videos/task_weights_1.mp4"/>
+   <source type="video/mp4"  src="https://raw.githubusercontent.com/ARC-OPT/ARC-OPT/master/videos/task_weights_1.mp4"/>
 </video>
 Orientation control deactivated (task weights 4,5,6 set to zero): <br>
 <video width="320" height="240" controls>
-   <source type="video/mp4"  src="https://raw.githubusercontent.com/ARC-OPT/ARC-OPT/testing_doc/videos/task_weights_2.mp4"/>
+   <source type="video/mp4"  src="https://raw.githubusercontent.com/ARC-OPT/ARC-OPT/master/videos/task_weights_2.mp4"/>
 </video>
 
 ### Adapting the Joint Weights
 
 All joint weights are set to 1:<br>
 <video width="320" height="240" controls>
-   <source type="video/mp4"  src="https://raw.githubusercontent.com/ARC-OPT/ARC-OPT/testing_doc/videos/joint_weights_1.mp4"/>
+   <source type="video/mp4"  src="https://raw.githubusercontent.com/ARC-OPT/ARC-OPT/master/videos/joint_weights_1.mp4"/>
 </video>
 Joint 5 deactivated (joint weight 5 set to zero): <br>
 <video width="320" height="240" controls>
-   <source type="video/mp4"  src="https://raw.githubusercontent.com/ARC-OPT/ARC-OPT/testing_doc/videos/joint_weights_2.mp4"/>
+   <source type="video/mp4"  src="https://raw.githubusercontent.com/ARC-OPT/ARC-OPT/master/videos/joint_weights_2.mp4"/>
 </video>
