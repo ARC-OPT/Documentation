@@ -57,3 +57,12 @@ The library is written in C++, with Python bindings for most functionalilities. 
 7. [Serial Robot](tutorials/acc_serial_robot.md)
 8. [Hybrid Robot](tutorials/acc_hybrid_robot.md)
 
+# Publications
+
+D. Mronga, S. Kumar and F. Kirchner, "[Whole-Body Control of Series-Parallel Hybrid Robots](publications/icra_2022/index.html)", 2022 International Conference on Robotics and Automation (ICRA), 2022, pp. 228-234
+
+D. Mronga and F. Kirchner, "[Learning context-adaptive task constraints for robotic manipulation](https://www.sciencedirect.com/science/article/abs/pii/S0921889021000646?via%3Dihub)", Robotics and Autonomous Systems, Volume 141, 2021
+
+D. Mronga, T. Knobloch, J. de Gea Fernández & F. Kirchner, "[A constraint-based approach for human–robot collision avoidance](https://www.tandfonline.com/doi/full/10.1080/01691864.2020.1721322?scroll=top&needAccess=true)", Advanced Robotics, Volume 34, Issue 5, pp. 265-281, 2020
+
+D. Mronga, "[Learning Task Constraints for Whole-Body Control of Robotic Systems](https://media.suub.uni-bremen.de/handle/elib/5942)", PhD Thesis, 2022, University of Bremen
