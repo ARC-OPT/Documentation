@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Whole-Body Control of Series-Parallel Hybrid Robots</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="default.css" />
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Whole-Body Control of Series-Parallel Hybrid
+Robots</h1>
+
+
+<p class="author">
+    <a href="https://google.de">
+  
+  Dennis Mronga 
+        <sup>1</sup>
+        </a>
+      <a href="https://google.de">
+  
+  Shivesh Kumar 
+        <sup>1</sup>
+        </a>
+      <a href="https://google.de">
+  
+  Frank Kirchner 
+        <sup>1 2</sup>
+        </a>
+  </p>
+
+<p class="affiliation">
+
+    <a href="https://www.dfki.de/en/web">
+  
+  German Research Center for Artificial Intelligence 
+      <sup>1</sup>
+  
+    </a>
+  <br>
+  
+    <a href="https://www.uni-bremen.de/">
+  
+  University of Bremen 
+      <sup>2</sup>
+  
+    </a>
+  <br>
+  </p>
+
+</header>
+
+<div class="header_links">
+  <a href="https://github.com/ARC-OPT/wbc"><i class="fa fa-github" style="font-size:36px; padding:1em;"></i></a>
+    <a href="https://ieeexplore.ieee.org/document/9811616"><i class="fa fa-file-pdf-o" style="font-size:36px; padding:1em;"></i></a>
+ </div>
+<div class="video-wrapper">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/yv6vCUgV6zc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<h2 id="introduction">Introduction</h2>
+<p>Parallel mechanisms are increasingly used as subsystems in different
+robots. Compared to serial or tree-type robots, parallel mechanisms can
+offer higher stiffness, accuracy, and payload capacity at the downside
+of a reduced workspace and higher complexity in modeling and control.
+The combination of serial and parallel mechanisms leads to
+series-parallel hybrid systems, which combine the advantages of both
+types. Humanoids may benefit from series-parallel designs as they
+require a stiff structure and optimal distribution of mass-inertia
+properties. However, robots with series-parallel structure also inherit
+the complexity of both serial and parallel architectures.</p>
+<figure>
+<img src="static/figures/robots.png" style="width: 50%; margin: auto;"
+alt="RH5 and RH5 Manus; Humanoid robots with series-parallel hybrid architecture." />
+<figcaption aria-hidden="true">RH5 and RH5 Manus; Humanoid robots with
+series-parallel hybrid architecture.</figcaption>
+</figure>
+<p>Whole-Body Control (WBC) has emerged as the standard method to
+control humanoids within the last two decades. Like most other existing
+software for robot motion planning and control, the existing WBC
+frameworks can only deal with serial or tree-type robots. In contrast,
+series-parallel hybrid systems that contain parallel loops in the
+mechanical structure are usually not supported.</p>
+<p>To overcome this limitation, we introduce a computationally efficient
+WBC framework for series-parallel hybrid robots, which poses the
+optimization problem in the actuation space of a series-parallel hybrid
+robot. In doing so, we can fully exploit the workspace of the robot,
+consider singularities of parallel subsystems and compute more accurate
+solutions than WBC approaches for tree-type robots.</p>
+<h2 id="whole-body-control-architecture">Whole-Body Control
+Architecture</h2>
+<p>System with closed loops can be described by three different sets of
+coordinates:</p>
+<ul>
+<li>Spanning tree joints <span class="math inline">\(\mathbf{q} \in
+\mathbb{R}^n\)</span>: All joints belonging to the spanning tree that
+describes the system</li>
+<li>Independent joints <span class="math inline">\(\mathbf{y} \in
+\mathbb{R}^m\)</span>: The generalized coordinates that describe <span
+class="math inline">\(\mathbf{q}\)</span> uniquely</li>
+<li>Active joints <span class="math inline">\(\mathbf{u} \in
+\mathbb{R}^p\)</span>: All joints containing actuators.</li>
+</ul>
+<figure>
+<img src="static/figures/control_abstraction.svg"
+style="width: 60%; margin: auto;"
+alt="Abstraction in series-parallel hybrid robots" />
+<figcaption aria-hidden="true">Abstraction in series-parallel hybrid
+robots</figcaption>
+</figure>
+<p>Loop-closure constraints arising in parallel submechanisms have to
+considered in the control law in order to achieve a correct solution. By
+using the HyRoDyn library to compute the kinematic and dynamic
+quantities, we can setup the WBC problem in the actuation space of a
+series-parallel hybrid robot. This allows us to e.g., model physical
+limits of the parallel submechanisms as box constraints in the
+optimization problem and, thus, exploit the entire workspace of a
+series-parallel hybrid robot on position, velocity and force/torque
+level.</p>
+<h2 id="experimental-results">Experimental Results</h2>
+<p>We evaluate the integration of actuator position limits as box
+constraints in our WBC framework and compare the admissible workspace to
+a WBC approach for tree-type robots, which describes box constraints in
+independent joint space.</p>
+<figure>
+<img src="static/figures/results_position_serial.png"
+style="width: 90%; margin: auto;" alt="Tree-type WBC approach" />
+<figcaption aria-hidden="true">Tree-type WBC approach</figcaption>
+</figure>
+<figure>
+<img src="static/figures/results_position_hybrid.png"
+style="width: 90%; margin: auto;" alt="Hybrid WBC approach" />
+<figcaption aria-hidden="true">Hybrid WBC approach</figcaption>
+</figure>
+<h2 id="presentation-video">Presentation Video</h2>
+<p>Follows soon</p>
+<h2 id="poster">Poster</h2>
+<p><a href="static/figures/main_poster_icra_2022.pdf">ICRA 2022
+Poster</a></p>
+<h2 id="acknowledgements">Acknowledgements</h2>
+<p>This research was done in the <a
+href="https://robotik.dfki-bremen.de/en/research/projects/transfit/">TransFIT</a>
+(FKZ 50RA1701), <a
+href="https://robotik.dfki-bremen.de/en/research/projects/m-rock/">M-RoCK</a>
+(FKZ 01IW21002) and <a
+href="https://robotik.dfki-bremen.de/en/research/projects/veryhuman/">VeryHuman</a>
+(FKZ 01IW20004) projects funded by the German Aerospace Center (DLR)
+with federal funds from the Federal Ministry of Economic Affairs and
+Energy (BMWi) and Federal Ministry of Education and Research (BMBF)
+respectively.</p>
+<h2 id="citation">Citation</h2>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode bibtex"><code class="sourceCode bibtex"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="va">@INPROCEEDINGS</span>{<span class="ot">9811616</span>,</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">author</span>={Mronga, Dennis and Kumar, Shivesh and Kirchner, Frank},</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">booktitle</span>={2022 International Conference on Robotics and Automation (ICRA)}, </span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">title</span>={Whole-Body Control of Series-Parallel Hybrid Robots}, </span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="dt">year</span>={2022},</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="dt">pages</span>={228-234},</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="dt">doi</span>={10.1109/ICRA46639.2022.9811616}}</span></code></pre></div>
+<footer>
+  <img src="static/logo.svg" style="width:281px">
+</footer>
+</body>
+</html>
