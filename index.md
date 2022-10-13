@@ -16,12 +16,6 @@ Now, in each control cycle ...
   * The optimization problem is solved
   * The solution is applied to the actuators of the robot
   
-An advantage of this approach is that complex tasks can be composed from low-dimensional descriptors, which are typically  easier to specify and control than the complete task are once. Also, the redundancy of the robot is nicely exploited utilizing all the dof of the system (whole body). 
-
-###  Intended Usage
-
-WBC is a standalone library for optimization-based control of redundant robots. It contains various implementations of whole-body feedback control approaches on velocity-, acceleration- and force/torque-level. 
-
 WBC is meant ...
 
   * for controlling robots with redundant degrees of freedom, like humanoids or other legged robots with floating base, but also fixed-base systems like mobile manipulators, dual-arm systems or even simple manipulators. In general, the number of robot dof can be arbitraryily high like >50. 
@@ -30,8 +24,13 @@ WBC is meant ...
 
   * to be a purely reactive approach, i.e., it does not involve any motion planning or trajectory optimization. However, it can be used to stabilize trajectories coming from a motion planner or trajectory optimizer and integrate them with other objectives and physical constraints of the robot. 
 
-The library is written in C++, with Python bindings for most functionalilities. It aims at facilitating the specification and benchmarking of whole-body controllers for redundant robots, i.e., the target user group are software developers and control engineers.
+###  ARC-OPT: Motivation
 
+ARC-OPT is a framework for optimization-based control of redundant robots. It contains various implementations of whole-body feedback control approaches on velocity-, acceleration- and force/torque-level. The core WBC library is written in C++, with Python bindings for most functionalilities. It aims at facilitating the specification and benchmarking of whole-body controllers for redundant robots, i.e., the target user group are software developers and control engineers. Compared to existing frameworks for optimization-based robot control, ARC-OPT provides
+
+ * A common interface to several WBC approaches on velocity, acceleration, and torque control level, using different solvers and robot models
+ * A learning module that allows to automatically derive, adapt, and optimize WBC tasks (will made be open-source soon)
+ * An approach for modeling and solving WBC problems on series-parallel hybrid robots, as described in [this paper](publications/icra_2022/index.html)  (will made be open-source soon)
 
 # Installation
  * [Using Rock](installation/installation_rock.md)
