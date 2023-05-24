@@ -2,7 +2,7 @@ For Ubuntu 18.04/20.04
 
 ### Basic Install
 
-This will install the WBC core library with a single robot model and QP solver respectively. Download this [install script](https://raw.githubusercontent.com/ARC-OPT/wbc/master/scripts/install.sh?raw=1), store it in a folder of your choice (e.g., arc-opt) and execute:
+This will install the WBC core library with a single robot model and QP solver respectively. Download this [install script](https://github.com/ARC-OPT/wbc/blob/master/scripts/install.sh?raw=1), store it in a folder of your choice (e.g., arc-opt) and execute:
 
 ```
 mkdir ~/arc-opt && cd ~/arc-opt
@@ -10,7 +10,7 @@ sh install.sh
 ```
 ### Full Install
 
-This will install the WBC core library alongside with different robot models, solvers and python bindings. Download this [install script](https://raw.githubusercontent.com/ARC-OPT/wbc/master/scripts/full_install.sh?raw=1), store it in a folder of your choice (e.g., arc-opt) and execute:
+This will install the WBC core library alongside with different robot models, solvers and python bindings. Download this [install script](https://github.com/ARC-OPT/wbc/blob/master/scripts/full_install.sh?raw=1), store it in a folder of your choice (e.g., arc-opt) and execute:
 
 ```
 mkdir ~/arc-opt && cd ~/arc-opt
