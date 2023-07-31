@@ -35,6 +35,7 @@ ARC-OPT is a framework for optimization-based control of redundant robots. It co
 # Installation
  * [Using Rock](installation/installation_rock.md)
  * [Outside Rock](installation/installation_no_rock.md)
+ * [Using ROS/ROS2](installation/installation_ros.md)
 
 # Framework Overview
  * [WBC Library](framework/wbc_library.md)
