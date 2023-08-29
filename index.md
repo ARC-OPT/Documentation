@@ -32,14 +32,24 @@ ARC-OPT is a framework for optimization-based control of redundant robots. It co
  * A learning module that allows to automatically derive, adapt, and optimize WBC tasks (will made be open-source soon)
  * An approach for modeling and solving WBC problems on series-parallel hybrid robots, as described in [this paper](publications/icra_2022/index.html)  (will made be open-source soon)
 
-# Installation
- * [Using Rock](installation/installation_rock.md)
- * [Outside Rock](installation/installation_no_rock.md)
- * [Using ROS/ROS2](installation/installation_ros.md)
+###  Concepts
 
-# Framework Overview
- * [WBC Library](framework/wbc_library.md)
- * [Rock Integration](framework/wbc_rock_integration.md)
+The design of WBC library separates the whole-body controller into 4 main building blocks, namely controllers(s), robot model, scene and solver. 
+
+![wbc_overview](../images/wbc_overview.svg)
+
+* **Controller**: A controller implements a task function in operational space, which represents the control objective of a single task, e.g., maintain a certain contact force, follow a trajectory or avoid an obstacle. Each controller can be designed either in task or joint space of the robot. Thus, depending on the implementation, the input of a controller can be a target pose, twist or wrench (task space), as well as a joint configuration, velocity or torque (joint space). The control output, which is passed to the scene, describes the error of the task function, which is minimized during task execution. All controllers are agnostic of the robot kinematics and dynamics, as well as the underlying \acrshort{wbcLabel} implementation. The available controllers can be found [here](https://github.com/ARC-OPT/wbc/tree/master/src/controllers).
+
+* **Scene**: The scene sets up the optimization problem, which is implemented as a variant of a quadratic program (QP). The scene integrates all configured tasks/constraints and assigns them a priority. Depending on the implementation of the scene, the priorities can be strict, soft or a combination of both. Strict prioritization schemes implement a task hierarchy, where tasks with lower priority do not influence tasks with higher priority. In soft prioritization the solution is a weighted combination of all tasks, tasks with higher weights have a larger contribution to the solution. In each control cycle, the scene is updated with the current robot kinematics/dynamics and the control outputs of all tasks. The output of the scene is a (hierarchical) QP. The available scenes can be found [here](https://github.com/ARC-OPT/wbc/tree/master/src/scenes).
+
+* **Robot Model**: The robot model computes the kinematic and dynamic information that the scene requires to set up the optimization problem. This includes different Jacobians and their derivatives, frame transformations, gravity forces and torques, as well as mass-inertia matrices. The robot model is updated in each control cycle with the current joint status (position, velocity, acceleration) of the robot. The available robot models can be found [here](https://github.com/ARC-OPT/wbc/tree/master/src/robot_models).
+
+* **Solver**:  The solver is a generic component that solves a variant of a QP. The input is a (hierarchical) QP. Its output is a velocity, acceleration or torque command in configuration space of the robot. Note that not all solvers can cope with task hierarchies. The available robot models can be found [here](https://github.com/ARC-OPT/wbc/tree/master/src/solvers).
+
+# Installation
+ * [WBC Library](installation/installation_no_rock.md)
+ * [Using ROS2](installation/installation_ros2.md)
+ * [Using Rock](installation/installation_rock.md)
 
 # Tutorials
 
