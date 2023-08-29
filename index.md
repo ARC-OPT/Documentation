@@ -54,7 +54,7 @@ The design of WBC library separates the whole-body controller into 4 main buildi
  * [ROS2 Interface](installation/installation_ros2.md)
  * [Rock Interface](installation/installation_rock.md)
 
-# Tutorials
+# WBC Library Tutorials
 
 ### Velocity-based WBC
  
@@ -71,7 +71,7 @@ The design of WBC library separates the whole-body controller into 4 main buildi
 8. [Hybrid Robot](tutorials/acc_hybrid_robot.md)
 
 
-### ROS2 interface
+# ROS2 Tutorials
 1. [Introduction](tutorials/ros2_introduction.md)
 
 
