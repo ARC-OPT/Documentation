@@ -73,6 +73,7 @@ The design of WBC library separates the whole-body controller into 4 main buildi
 
 # ROS2 Tutorials
 1. [Introduction](tutorials/ros2_introduction.md)
+2. [Cartesian Space Example](https://github.com/ARC-OPT/Documentation/blob/master/tutorials/ros2_cartesian_control.md)
 
 
 # Publications
