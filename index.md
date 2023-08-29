@@ -51,8 +51,8 @@ The design of WBC library separates the whole-body controller into 4 main buildi
 
 # Installation
  * [WBC Library](installation/installation_no_rock.md)
- * [Using ROS2](installation/installation_ros2.md)
- * [Using Rock](installation/installation_rock.md)
+ * [ROS2 Interface](installation/installation_ros2.md)
+ * [Rock Interface](installation/installation_rock.md)
 
 # Tutorials
 
