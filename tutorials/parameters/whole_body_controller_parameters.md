@@ -32,6 +32,13 @@ Control mode of the wbc. Can be one of [velocity,acceleration].
  - parameter is not empty
  - one of the specified values: ['velocity', 'acceleration']
 
+## prefix
+
+Prefix used in the robot description parameter to claim the correct state and command interface names.
+
+* Type: `string`
+* Default Value: ""
+
 ## command_interfaces
 
 Command interfaces to claim from hardware.
