@@ -12,7 +12,7 @@ You should now see the KUKA iiwa robot in rviz, performing a trajectory in joint
 <br/>
 <br/>
 
-In the [joint_space_example.launch.py](https://github.com/ARC-OPT/wbc_ros/blob/main/launch/cartesian_space_example.launch.py) file, the code to load the example is explained step by step. This [iiwa_controllers.yaml](https://github.com/ARC-OPT/wbc_ros/blob/main/config/joint_space_example/iiwa_controllers.yaml) file describes the ros2 control configuration, which is loaded in the launch file. 
+In the [joint_space_example.launch.py](https://github.com/ARC-OPT/wbc_ros/blob/main/launch/joint_space_example.launch.py) file, the code to load the example is explained step by step. This [iiwa_controllers.yaml](https://github.com/ARC-OPT/wbc_ros/blob/main/config/joint_space_example/iiwa_controllers.yaml) file describes the ros2 control configuration, which is loaded in the launch file. 
 
 If you type `ros2 control list_controllers` you can see the available controllers: 
 ```!bash
