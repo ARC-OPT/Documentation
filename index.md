@@ -36,7 +36,7 @@ ARC-OPT is a framework for optimization-based control of redundant robots. It co
 
 The design of WBC library separates the whole-body controller into 4 main building blocks, namely controllers(s), robot model, scene and solver. 
 
-![wbc_overview](../images/wbc_overview.svg)
+![wbc_overview](images/wbc_overview.svg)
 
 * **Controller**: A controller implements a task function in operational space, which represents the control objective of a single task, e.g., maintain a certain contact force, follow a trajectory or avoid an obstacle. Each controller can be designed either in task or joint space of the robot. Thus, depending on the implementation, the input of a controller can be a target pose, twist or wrench (task space), as well as a joint configuration, velocity or torque (joint space). The control output, which is passed to the scene, describes the error of the task function, which is minimized during task execution. All controllers are agnostic of the robot kinematics and dynamics, as well as the underlying \acrshort{wbcLabel} implementation. The available controllers can be found [here](https://github.com/ARC-OPT/wbc/tree/master/src/controllers).
 
