@@ -73,9 +73,9 @@ The design of WBC library separates the whole-body controller into 4 main buildi
 
 # ROS2 Tutorials
 1. [Introduction](tutorials/ros2_introduction.md)
-2. [Cartesian Space Example](https://github.com/ARC-OPT/Documentation/blob/master/tutorials/ros2_cartesian_control.md)
-3. [Joint Space Example](https://github.com/ARC-OPT/Documentation/blob/master/tutorials/ros2_joint_space_control.md)
-4. [Nullspace Example](https://github.com/ARC-OPT/Documentation/blob/master/tutorials/ros2_nullspace_control.md)
+2. [Cartesian Space Example](tutorials/ros2_cartesian_control.md)
+3. [Joint Space Example](tutorials/ros2_joint_space_control.md)
+4. [Nullspace Example](tutorials/ros2_nullspace_control.md)
 
 
 # Publications
