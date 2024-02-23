@@ -19,17 +19,6 @@ wget https://raw.githubusercontent.com/ARC-OPT/wbc/master/scripts/full_install.s
 sh full_install.sh
 ```
 
-### (Optional) With Python Bindings
-
-This requires python3
-
-```
-sudo apt-get install python3-dev python3-numpy python3-nose libboost-python-dev libboost-numpy-dev
-cd ~/arc-opt/wbc/build
-cmake .. -DUSE_PYTHON=1
-sudo make -j8 install
-```
-
 ### (Optional) With Hyrodyn-based robot model
 This currently requires an account on https://git.hb.dfki.de
 ```
