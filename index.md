@@ -54,6 +54,14 @@ The design of WBC library separates the whole-body controller into 4 main buildi
  * [ROS2 Interface](installation/installation_ros2.md)
  * [Rock Interface](installation/installation_rock.md)
 
+# Testing
+
+To execute unit tests for the WBC library, run
+```
+sh scripts/run_tests.sh
+```
+from the library's root folder. This will execute unit tests for all installed components, e.g. solvers, robot models, etc...
+
 # WBC Library Tutorials
 
 ### Velocity-based WBC
