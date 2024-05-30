@@ -2,15 +2,14 @@
 
 ### Whole-Body Control
 
-Whole Body Control (WBC), also referred to as constraint-based or optimization-based control, is an approach for specifying and controlling complex robotic tasks. 
-The term was coined by Luis Sentis in his work
+Whole Body Control (WBC) is an approach for specifying and controlling complex robotic tasks
 [Synthesis and Control of Whole-Body Behaviors in Humanoid Systems](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.73.8747&rep=rep1&type=pdf).
 
 <img src="images/wbc_principle.svg" alt="drawing" width="600"/>
 
 Image Credits: Dennis Mronga, DFKI
 
-The idea is define a set of feedback controllers around an optimization problem. Each controller regulates a certain task, the control output is fed into the cost function of the optimization problem, typically a quadratic program, and thus minimized during execution.
+The idea is to define a set of feedback controllers around an optimization problem. Each controller regulates a certain task, the control output is fed into the cost function of the optimization problem, typically a quadratic program, and thus minimized during execution.
 In each control cycle ...
   * The cost function is updated with the current robot state and controller reference
   * The optimization problem is solved
@@ -52,7 +51,6 @@ The design of WBC library separates the whole-body controller into 4 main buildi
 # Installation
  * [WBC Library](installation/installation_no_rock.md)
  * [ROS2 Interface](installation/installation_ros2.md)
- * [Rock Interface](installation/installation_rock.md)
 
 # Testing
 
