@@ -1,6 +1,10 @@
 # Adapting Task and Joint Weights
 
-The tutorial can be found in [tutorials/kuka_iiwa/cart_pos_ctrl_hls_weights.cpp](https://github.com/ARC-OPT/wbc/blob/master/tutorials/kuka_iiwa/cart_pos_ctrl_hls_weights.cpp), documentation can be found [here](https://arc-opt.github.io/wbc/cart__pos__ctrl__hls__weights_8cpp.html).
+The tutorial can be found in [tutorials/kuka_iiwa/cart_pos_ctrl_hls_weights.cpp](https://github.com/ARC-OPT/wbc/blob/master/tutorials/kuka_iiwa/cart_pos_ctrl_hls_weights.cpp), documentation can be found [here](https://arc-opt.github.io/wbc/cart__pos__ctrl__hls__weights_8cpp.html). To run the tutorial, type
+```
+cd build/tutorials/kuka_iiwa
+./cart_pos_ctrl_hls_weights
+```
 
 This tutorial shows the effect of modifying the task weights and joint weights. If you set a task weight to zero, the corresponding task variable will assume an arbitrary value (and not the desired setpoint). If you set a joint weight to zero, the corresponding joint will not contribute to the task solution, i.e., its velocity will be zero!
 

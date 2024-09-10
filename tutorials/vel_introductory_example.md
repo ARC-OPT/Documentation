@@ -6,7 +6,11 @@ The whole-body controller consists of 4 major components, a set of controllers, 
 
 ## Cartesian position control on a 7 dof arm
 
-This tutorial can be found in [tutorials/kuka_iiwa/cart_pos_ctrl_hls.cpp](https://github.com/ARC-OPT/wbc/blob/master/tutorials/kuka_iiwa/cart_pos_ctrl_hls.cpp), documentation can be found [here](https://arc-opt.github.io/wbc/cart__pos__ctrl__hls_8cpp.html).
+This tutorial can be found in [tutorials/kuka_iiwa/cart_pos_ctrl_hls.cpp](https://github.com/ARC-OPT/wbc/blob/master/tutorials/kuka_iiwa/cart_pos_ctrl_hls.cpp), documentation can be found [here](https://arc-opt.github.io/wbc/cart__pos__ctrl__hls_8cpp.html). To run the tutorial do
+```
+cd build/tutorials/kuka_iiwa
+./cart_pos_ctrl_hls
+```
 
 
 <video width="320" height="240" controls>

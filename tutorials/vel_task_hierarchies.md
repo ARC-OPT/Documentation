@@ -1,6 +1,10 @@
 # Task hierarchies
 
-The example can be found in [tutorials/kuka_iiwa/cart_pos_ctrl_hls_hierarchies.cpp](https://github.com/ARC-OPT/wbc/blob/master/tutorials/kuka_iiwa/cart_pos_ctrl_hls_hierarchies.cpp), documentation can be found [here](https://arc-opt.github.io/wbc/cart__pos__ctrl__hls__hierarchies_8cpp.html).
+The example can be found in [tutorials/kuka_iiwa/cart_pos_ctrl_hls_hierarchies.cpp](https://github.com/ARC-OPT/wbc/blob/master/tutorials/kuka_iiwa/cart_pos_ctrl_hls_hierarchies.cpp), documentation can be found [here](https://arc-opt.github.io/wbc/cart__pos__ctrl__hls__hierarchies_8cpp.html). To run the tutorial, type
+```
+cd build/tutorials/kuka_iiwa
+./cart_pos_ctrl_hls_hierarchies
+```
 
 ### Implementation of Task Hierarchies
 

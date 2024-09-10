@@ -1,6 +1,10 @@
 # Using a Different Solver
 
-The tutorial can be found in [tutorials/kuka_iiwa/cart_pos_ctrl_qpOASES.cpp](https://github.com/ARC-OPT/wbc/blob/master/tutorials/kuka_iiwa/cart_pos_ctrl_qpOASES.cpp). Documentation can be found [here](https://arc-opt.github.io/wbc/cart__pos__ctrl__qpOASES_8cpp.html).
+The tutorial can be found in [tutorials/kuka_iiwa/cart_pos_ctrl_qpOASES.cpp](https://github.com/ARC-OPT/wbc/blob/master/tutorials/kuka_iiwa/cart_pos_ctrl_qpOASES.cpp). Documentation can be found [here](https://arc-opt.github.io/wbc/cart__pos__ctrl__qpOASES_8cpp.html). To run the tutorial, type
+```
+cd build/tutorials/kuka_iiwa
+./cart_pos_ctrl_qpoases
+```
 
 This tutorial is identical to tutorial 01, except that we use a different solver (qpOASES) and scene (VelocitySceneQuadraticCost) here. The main differences are:
 * qpOASES allows inequality constraints, e.g., joint velocity limits, which is not possible with the HLS solver
