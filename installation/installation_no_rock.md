@@ -19,6 +19,18 @@ wget https://raw.githubusercontent.com/ARC-OPT/wbc/master/scripts/full_install.s
 sh full_install.sh
 ```
 
+# Docker install
+
+This requires [docker](https://docs.docker.com/engine/install/ubuntu/) to be installed beforehand.
+
+```
+git clone git@github.com:ARC-OPT/wbc.git
+cd wbc/docker
+docker build -t <image_name> .
+docker run -i -t <image_name>
+```
+
+
 ### (Optional) With Hyrodyn-based robot model
 This currently requires an account on https://git.hb.dfki.de
 ```
@@ -49,3 +61,5 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
 ```
 export PYTHONPATH=$PYTHONPATH:/usr/local/lib/pythonX.X/site_packages
 ```
+
+[Back to Main Page](https://arc-opt.github.io/Documentation)
