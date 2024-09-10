@@ -9,7 +9,8 @@
    ```
 5. Install wbc_ros packages
    ```
-   cd ~/my_ros_workspace
+   mkdir -p ros2_ws/src
+   cd ros2_ws
    vcs import src --input https://raw.githubusercontent.com/ARC-OPT/wbc_ros/main/repos.yaml
    rosdep install --from-paths src -i -r -y
    colcon build --symlink-install
