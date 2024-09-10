@@ -5,7 +5,7 @@
 3. Create a ROS 2 workspace as described [here](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-A-Workspace/Creating-A-Workspace.html) or use an existing one
 4. If not yet done, init rosdep
    ```
-   sudo rosdep init & rosdep update
+   sudo rosdep init && rosdep update
    ```
 5. Install wbc_ros packages
    ```
@@ -18,4 +18,4 @@
    source install/setup.bash
    ```
    
-[Back to Main Page](https://arc-opt.github.io/Documentation)
+[[Back to Main Page]](https://arc-opt.github.io/Documentation)
