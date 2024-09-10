@@ -13,7 +13,7 @@
    git clone https://github.com/ARC-OPT/wbc_msgs.git
    git clone https://github.com/ARC-OPT/wbc_ros.git
    cd ..
-   rosdep install --from-paths src/wbc_ros -i src/wbc_msgs
+   rosdep install --from-paths src/wbc_ros -i src/wbc_msgs -y
    colcon build --symlink-install
    source install/setup.bash
    ```
