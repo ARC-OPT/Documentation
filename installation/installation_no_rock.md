@@ -62,4 +62,4 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
 export PYTHONPATH=$PYTHONPATH:/usr/local/lib/pythonX.X/site_packages
 ```
 
-[Back to Main Page](https://arc-opt.github.io/Documentation)
+[[Back to Main Page]](https://arc-opt.github.io/Documentation)
