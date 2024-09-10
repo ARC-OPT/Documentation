@@ -13,3 +13,5 @@ This tutorial can be found in [tutorials/kuka_iiwa/cart_pos_ctrl_hls.cpp](https:
 
 
 In the video, the upper plot shows the joint velocity of joint 4 (elbow), the lower plot shows the setpoint and actual position (only z-axis).
+
+[Back to Main Page](https://arc-opt.github.io/Documentation)[Next Tutorial](https://arc-opt.github.io/Documentation/tutorials/vel_using_different_solver.html)
