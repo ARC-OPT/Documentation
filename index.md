@@ -1,6 +1,6 @@
-# Introduction
+[Code API](https://arc-opt.github.io/wbc/index.html)  | [WBC Library](https://github.com/ARC-OPT/wbc/)   | [WBC ROS](https://github.com/ARC-OPT/wbc_ros/) 
 
-[Code API](https://arc-opt.github.io/wbc/index.html)  | [Full Documentation](https://arc-opt.github.io/Documentation/) 
+# Introduction
 
 ### Whole-Body Control
 
