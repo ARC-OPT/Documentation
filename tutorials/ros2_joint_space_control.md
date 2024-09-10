@@ -1,3 +1,5 @@
+# WBC ROS2 - Joint Space Example
+
 To run a simple Joint space example, you can do
 ```
 ros2 launch wbc_ros joint_space_example.launch.py
@@ -20,3 +22,5 @@ whole_body_controller[wbc_ros/WholeBodyController] active
 joint_state_broadcaster[joint_state_broadcaster/JointStateBroadcaster] active    
 joint_position_controller[wbc_ros/JointPositionController] active
 ```
+
+[[Previous Tutorial]](https://arc-opt.github.io/Documentation/tutorials/ros2_cartesian_control.html)[[Back to Main Page]](https://arc-opt.github.io/Documentation)[[Next Tutorial]](https://arc-opt.github.io/Documentation/tutorials/ros2_nullspace_control.html)
