@@ -1,6 +1,6 @@
-# WBC ROS2 - Introduction
+# WBC ROS 2 - Introduction
 
-WBC is integrated with [ros2_control](https://control.ros.org/master/index.html). The Whole-Body Controller itself, as well as every task space controller are implemented as [ros2 controllers](https://control.ros.org/master/doc/ros2_controllers/doc/controllers_index.html), inheriting from [ChainableControllerInterface](https://github.com/ros-controls/ros2_control/blob/master/controller_interface/include/controller_interface/chainable_controller_interface.hpp). 
+WBC is integrated with [ros2_control](https://control.ros.org/master/index.html). The Whole-Body Controller itself, as well as every task space controller are implemented as [ROS 2 controllers](https://control.ros.org/master/doc/ros2_controllers/doc/controllers_index.html), inheriting from [ChainableControllerInterface](https://github.com/ros-controls/ros2_control/blob/master/controller_interface/include/controller_interface/chainable_controller_interface.hpp). 
 
 ## wbc_ros - Published Topics
 * ```/whole_body_controller/solver_output``` - Solution provided by the qp solver

@@ -2,7 +2,7 @@
 
 WBC is a C++ library for task-oriented control of redundant robots. It facilitates the specification of different whole-body control approaches. The inputs of a whole-body controller are given as trajectories in task space (e.g., target pose, twist and acceleration), each of which corresponds to a different control objective. The output of the controller is the desired joint space velocity, acceleration or torque that is required to fulfill all the given objectives, under consideration of the physical constraints of the robot.
 
-As shown [here](https://arc-opt.github.io/Documentation/framework/wbc_library.html) a whole-body controller consists of 4 major components, a set of controllers, the WBC scene, the  robot model and, finally, the solver. In order to demonstrate how the components are specified, we develop a simple example.
+The whole-body controller consists of 4 major components, a set of controllers, the WBC scene, the  robot model and, finally, the solver. In order to demonstrate how the components are specified, we develop a simple example.
 
 ## Cartesian position control on a 7 dof arm
 

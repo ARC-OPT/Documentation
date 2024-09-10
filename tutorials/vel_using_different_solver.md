@@ -1,13 +1,13 @@
 # Using a Different Solver
 
-The tutorial can be found in [tutorials/kuka_iiwa/cart_pos_ctrl_qpoases.cpp](https://github.com/ARC-OPT/wbc/blob/master/tutorials/kuka_iiwa/cart_pos_ctrl_qpoases.cpp). Documentation can be found [here](https://arc-opt.github.io/wbc/cart__pos__ctrl__qpoases_8cpp.html).
+The tutorial can be found in [tutorials/kuka_iiwa/cart_pos_ctrl_qpOASES.cpp](https://github.com/ARC-OPT/wbc/blob/master/tutorials/kuka_iiwa/cart_pos_ctrl_qpOASES.cpp). Documentation can be found [here](https://arc-opt.github.io/wbc/cart__pos__ctrl__qpOASES_8cpp.html).
 
-This tutorial is identical to tutorial 01, except that we use a different solver (QPOases) and scene (VelocitySceneQuadraticCost) here. The main differences are:
-* QPOases allows inequality constraints, e.g.., joint velocity limits, which is not possible with the HLS solver
-* QPOases allows hard constraints, i.e., the constraints will never be violated. The HLS solver may return a sub-opotimal solution, which may violate the constraints
+This tutorial is identical to tutorial 01, except that we use a different solver (qpOASES) and scene (VelocitySceneQuadraticCost) here. The main differences are:
+* qpOASES allows inequality constraints, e.g., joint velocity limits, which is not possible with the HLS solver
+* qpOASES allows hard constraints, i.e., the constraints will never be violated. The HLS solver may return a sub-opotimal solution, which may violate the constraints
 * The VelocitySceneQuadraticCost models the tasks in the cost functional, while the VelocityScene models them as constraints
 
-### Use QPOases to limit the joint velocities
+### Use qpOASES to limit the joint velocities
 
 <video width="320" height="240" controls>
    <source type="video/mp4"  src="https://raw.githubusercontent.com/ARC-OPT/ARC-OPT/master/videos/tutorial_02.mp4"/>

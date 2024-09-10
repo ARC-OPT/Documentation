@@ -50,7 +50,7 @@ The design of WBC library separates the whole-body controller into 4 main buildi
 
 # Installation
  * [WBC Library](installation/installation_no_rock.md)
- * [ROS2 Interface](installation/installation_ros2.md)
+ * [ROS 2 Interface](installation/installation_ros2.md)
 
 # Testing
 
@@ -77,7 +77,7 @@ from the library's build folder. This will execute unit tests for all installed 
 8. [Hybrid Robot](tutorials/acc_hybrid_robot.md)
 
 
-# ROS2 Tutorials
+# ROS 2 Tutorials
 1. [Introduction](tutorials/ros2_introduction.md)
 2. [Cartesian Space Example](tutorials/ros2_cartesian_control.md)
 3. [Joint Space Example](tutorials/ros2_joint_space_control.md)

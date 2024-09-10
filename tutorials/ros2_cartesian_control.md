@@ -1,4 +1,4 @@
-# WBC ROS2 - Cartesian Space Example
+# WBC ROS 2 - Cartesian Space Example
 
 To run a simple Cartesian pose control example, you can do
 ```
@@ -14,7 +14,7 @@ You should now see the KUKA iiwa robot in rviz, performing a circular end effect
 <br/>
 <br/>
 
-In the [cartesian_space_example.launch.py](https://github.com/ARC-OPT/wbc_ros/blob/main/launch/cartesian_space_example.launch.py) file, the code to load the example is explained step by step. The [iiwa_controllers.yaml](https://github.com/ARC-OPT/wbc_ros/blob/main/config/cartesian_space_example/iiwa_controllers.yaml) file describes the ros2 control configuration, which is loaded in the launch file. 
+In the [cartesian_space_example.launch.py](https://github.com/ARC-OPT/wbc_ros/blob/main/launch/cartesian_space_example.launch.py) file, the code to load the example is explained step by step. The [iiwa_controllers.yaml](https://github.com/ARC-OPT/wbc_ros/blob/main/config/cartesian_space_example/iiwa_controllers.yaml) file describes the ROS 2 control configuration, which is loaded in the launch file. 
 
 If you type `ros2 control list_controllers` you can see the available controllers: 
 ```!bash

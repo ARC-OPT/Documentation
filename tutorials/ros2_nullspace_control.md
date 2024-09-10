@@ -1,4 +1,4 @@
-# WBC ROS2 - Nullspace Example
+# WBC ROS 2 - Nullspace Example
 
 To run a nullspace example, you can do
 ```
@@ -14,7 +14,7 @@ You should now see the KUKA iiwa robot in rviz. The robot maintains a fixed end 
 <br/>
 <br/>
 
-In the [nullspace_example.launch.py](https://github.com/ARC-OPT/wbc_ros/blob/main/launch/null_space_example.launch.py) file, the code to load the example is explained step by step. This [iiwa_controllers.yaml](https://github.com/ARC-OPT/wbc_ros/blob/main/config/null_space_example/iiwa_controllers.yaml) file describes the ros2 control configuration, which is loaded in the launch file. 
+In the [nullspace_example.launch.py](https://github.com/ARC-OPT/wbc_ros/blob/main/launch/null_space_example.launch.py) file, the code to load the example is explained step by step. This [iiwa_controllers.yaml](https://github.com/ARC-OPT/wbc_ros/blob/main/config/null_space_example/iiwa_controllers.yaml) file describes the ROS 2 control configuration, which is loaded in the launch file. 
 
 If you type `ros2 control list_controllers` you can see the available controllers: 
 ```!bash
