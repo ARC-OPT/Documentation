@@ -9,11 +9,9 @@
    ```
 5. Install wbc_ros packages
    ```
-   cd ~/my_ros_workspace/src
-   git clone https://github.com/ARC-OPT/wbc_msgs.git
-   git clone https://github.com/ARC-OPT/wbc_ros.git
-   cd ..
-   rosdep install --from-paths src/wbc_ros -i src/wbc_msgs -y
+   cd ~/my_ros_workspace
+   vcs import src --input https://raw.githubusercontent.com/ARC-OPT/wbc_ros/main/repos.yaml
+   rosdep install --from-paths src -i -r -y
    colcon build --symlink-install
    source install/setup.bash
    ```
