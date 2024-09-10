@@ -2,7 +2,7 @@
 
 To run a nullspace example, you can do
 ```
-ros2 launch wbc_ros nullspace_example.launch.py
+ros2 launch wbc_ros null_space_example.launch.py
 ```
 Again, to visualize the robot, you can do 
 ```
