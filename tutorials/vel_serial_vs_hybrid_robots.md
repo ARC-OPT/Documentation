@@ -1,6 +1,6 @@
 # Serial vs. Hybrid Robots
 
-The tutorial can be found in the files [tutorials/rh5/rh5_single_leg.cpp](https://github.com/ARC-OPT/wbc/blob/master/tutorials/rh5/rh5_single_leg.cpp) and [tutorials/rh5/rh5_single_leg_hybrid.cpp](https://github.com/ARC-OPT/wbc/blob/master/tutorials/rh5/rh5_single_leg_hybrid.cpp), documentation can be found [here](https://arc-opt.github.io/wbc/rh5__single__leg_8cpp.html)  and [here](https://arc-opt.github.io/wbc/rh5__single__leg__hybrid_8cpp.html).
+The tutorial can be found in the files [tutorials/rh5/rh5_single_leg.cpp](https://github.com/ARC-OPT/wbc/blob/master/tutorials/rh5/rh5_single_leg.cpp) and [tutorials/rh5/rh5_single_leg_hybrid.cpp](https://github.com/ARC-OPT/wbc/blob/master/tutorials/rh5/rh5_single_leg_hybrid.cpp), documentation can be found [here](https://arc-opt.github.io/wbc/rh5__single__leg_8cpp.html) and [here](https://arc-opt.github.io/wbc/rh5__single__leg__hybrid_8cpp.html).
 To run the serial tutorial, type (for the serial robot):
 ```
 cd build/tutorials/rh5
@@ -17,11 +17,11 @@ This tutorial assumes that you have installed hyrodyn and enabled the USE_HYRODY
 the actuators within parallel submechanisms cannot be
 considered in the optimization problem, which may
 over- or under-estimate the admissible workspace of
-the robot .
-2) The parallel mechanisms may be subject to singularities that cannot be properly considered in the WBC
-3) The solution of the WBC problem will be less accurate
+the robot.
+2) The parallel mechanisms may be subject to singularities that cannot be properly considered in the WBC.
+3) The solution of the WBC problem will be less accurate.
 as it does not capture the correct dynamics of the
-parallel mechanisms
+parallel mechanisms.
 4) It leads to custom and complicated robot control software stacks, which may be hard to maintain and reuse.
 
 [[Previous Tutorial]](https://arc-opt.github.io/Documentation/tutorials/vel_task_hierarchies.html)[[Back to Main Page]](https://arc-opt.github.io/Documentation)[[Next Tutorial]](https://arc-opt.github.io/Documentation/tutorials/vel_floating_base_robots.html)

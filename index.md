@@ -19,7 +19,7 @@ In each control cycle ...
   
 WBC is used for...
  
-  * controlling robots with redundant degrees of freedom, like humanoids or other legged robots with floating base, but also fixed-base systems like mobile manipulators, dual-arm systems or even simple manipulators. In general, the number of robot dof can be arbitraryily high like >50. 
+  * controlling robots with redundant degrees of freedom, like humanoids or other legged robots with floating base, but also fixed-base systems like mobile manipulators, dual-arm systems or even simple manipulators. In general, the number of robot dof can be arbitrarily high like >50. 
 
   * controlling multiple tasks simultaneously while taking into account the physical constraints of the robot. E.g., on a humanoid robot do ... (1) keep balance (2) Grasp an object with one arm (3) maintaining an upright body posture (4) Consider the joint torque limits, etc... 
 
@@ -27,7 +27,7 @@ WBC is used for...
 
 ###  ARC-OPT: Motivation
 
-ARC-OPT is a framework for optimization-based control of redundant robots. It contains various implementations of whole-body feedback control approaches on velocity-, acceleration- and force/torque-level. The core WBC library is written in C++, with Python bindings for most functionalilities. It aims at facilitating the specification and benchmarking of whole-body controllers for redundant robots, i.e., the target user group are software developers and control engineers. Compared to existing frameworks for optimization-based robot control, ARC-OPT provides
+ARC-OPT is a framework for optimization-based control of redundant robots. It contains various implementations of whole-body feedback control approaches on velocity-, acceleration- and force/torque-level. The core WBC library is written in C++, with Python bindings for most functionalities. It aims at facilitating the specification and benchmarking of whole-body controllers for redundant robots, i.e., the target user group are software developers and control engineers. Compared to existing frameworks for optimization-based robot control, ARC-OPT provides
 
  * A common interface to several WBC approaches on velocity, acceleration, and torque control level, using different solvers and robot models
  * A learning module that allows to automatically derive, adapt, and optimize WBC tasks (will made be open-source soon)
@@ -35,18 +35,18 @@ ARC-OPT is a framework for optimization-based control of redundant robots. It co
 
 ###  Concepts
 
-The design of WBC library separates the whole-body controller into 4 main building blocks, namely controllers(s), robot model, scene and solver. Robot models, scenes and solvers are implemented as plugins, which can be exchanged.
+The design of WBC library separates the whole-body controller into 4 main building blocks, namely controller(s), robot model, scene and solver. Robot models, scenes and solvers are implemented as plugins, which can be exchanged.
 
 ![wbc_overview](images/wbc_overview.svg)
 
-* **Controller**: A controller implements a task space function, e.g., maintain a certain contact force, follow a trajectory or avoid an obstacle. Each controller can be designed either in task or joint space of the robot. Thus, depending on the implementation, the input of a controller can be a target pose, twist or spatial acceleration (task space), as well as a joint position, velocity or acceleration (joint space). The control output, which is passed to the scene, describes the error of the task function, which is minimized during execution. All controllers are agnostic of the robot kinematics and dynamics, as well as the underlying WBC implementation. The available controllers can be found [here](https://github.com/ARC-OPT/wbc/tree/master/src/controllers).
+* **Controller**: A controller implements a task space function, e.g., maintain a certain contact force, follow a trajectory, or avoid an obstacle. Each controller can be designed either in task or joint space of the robot. Thus, depending on the implementation, the input of a controller can be a target pose, twist, or spatial acceleration (task space), as well as a joint position, velocity or acceleration (joint space). The control output, which is passed to the scene, describes the error of the task function, which is minimized during execution. All controllers are agnostic to the robot kinematics and dynamics, as well as the underlying WBC implementation. The available controllers can be found [here](https://github.com/ARC-OPT/wbc/tree/master/src/controllers).
 
 * **Scene**: The scene sets up a [quadratic program (QP)](https://en.wikipedia.org/wiki/Quadratic_programming). Each scene has a set of **tasks**, which are defined as part of the cost function, and a set of **constraints**, which are the physical constraints of the robot. In each control cycle, the scene is updated with the current robot kinematics/dynamics and the control outputs of all tasks. The output of the scene is the QP. The available scenes can be found [here](https://github.com/ARC-OPT/wbc/tree/master/src/scenes). Each scene inherits from [core/Scene](https://github.com/ARC-OPT/wbc/blob/master/src/core/Scene.hpp).
-  * **Task**: A task is essentially a summand in the cost function of the QP. The input of a task (task reference) is the control output of a controller. Thus, the control error is minimized by minimizing the cost function. Each task inherits from [core/Task](https://github.com/ARC-OPT/wbc/blob/master/src/core/Task.hpp) and is paramerized by [core/TaskConfig](https://github.com/ARC-OPT/wbc/blob/master/src/core/TaskConfig.hpp). There are currently three types of tasks: Joint Space tasks, Cartesian tasks or CoM Tasks. Each scene can have an arbitrary number of tasks. 
-  * **Task weights**: The importance of each task can be governed by either strict or soft priorities, where the latter are called task weights here. AThe solution of the QP will be a weighted sum of all task constributions, where tasks with higher tasks weights will be preferred.  task weight of zero means that the corresponding task variable will be ignored in the solution, e.g., a certain direction in tasks space. 
+  * **Task**: A task is essentially a summand in the cost function of the QP. The input of a task (task reference) is the control output of a controller. Thus, the control error is minimized by minimizing the cost function. Each task inherits from [core/Task](https://github.com/ARC-OPT/wbc/blob/master/src/core/Task.hpp) and is paramerized by [core/TaskConfig](https://github.com/ARC-OPT/wbc/blob/master/src/core/TaskConfig.hpp). There are currently three types of tasks: Joint Space tasks, Cartesian tasks, and CoM Tasks. Each scene can have an arbitrary number of tasks. 
+  * **Task weights**: The importance of each task can be governed by either strict or soft priorities, where the latter are called task weights here. The solution of the QP will be a weighted sum of all task constributions, where tasks with higher tasks weights will be preferred.  task weight of zero means that the corresponding task variable will be ignored in the solution, e.g., a certain direction in tasks space. 
   * **Task priority**: In contrast to task weights, task priorities implement a strict task hierarchy, where tasks with lower priority will be executed in the [Nullspace](https://en.wikipedia.org/wiki/Kernel_(linear_algebra)) of the tasks with higher prioritiy. As a result, the task with highest priority will be executed first, the tasks with lower priority only if enough redundant DoF are available, and so on. Note that the only scene/solver combination that currently allows task prioritization is (velocity/hls).
   * **Joint Weights**: Similar as task weights, joint weights govern the importance of each joint in the solution. A joint weight of zero means that the joint will not be used at all. 
-  * **Constraint**: Constraints described the physical limitations of the robot and/or the environment, e.g., torque limits, ground friction or self-collisions. Each constraint inherits from [core/Constraint](https://github.com/ARC-OPT/wbc/blob/master/src/core/Constraint.hpp). Currently the constraints a hard-coded in the Scene implementation. Thus, if you want to use different constraints, you will have to implement a new Scene. 
+  * **Constraint**: Constraints describe the physical limitations of the robot and/or the environment, e.g., torque limits, ground friction or self-collisions. Each constraint inherits from [core/Constraint](https://github.com/ARC-OPT/wbc/blob/master/src/core/Constraint.hpp). Currently the constraints a hard-coded in the Scene implementation. Thus, if you want to use different constraints, you will have to implement a new Scene. 
 * **Robot Model**: The robot model computes the kinematic and dynamic information that the scene requires to set up the optimization problem. This includes different Jacobians and their derivatives, frame transformations, gravity forces and torques, as well as mass-inertia matrices. The robot model is updated in each control cycle with the current joint status (position, velocity, acceleration) of the robot. Each robot model inherits from [core/RobotModel](https://github.com/ARC-OPT/wbc/blob/master/src/core/RobotModel.hpp). The available robot models can be found [here](https://github.com/ARC-OPT/wbc/tree/master/src/robot_models).
 * **Solver**:  The solver is a generic component that solves a variant of a QP. The input is a QP, the output is a velocity, acceleration or torque command in configuration space of the robot. Each solver inherits from [core/QPSolver](https://github.com/ARC-OPT/wbc/blob/master/src/core/QPSolver.hpp). The available solver can be found [here](https://github.com/ARC-OPT/wbc/tree/master/src/solvers). 
 
@@ -60,7 +60,7 @@ To execute unit tests for the WBC library, run
 ```
 make test
 ```
-from the library's build folder. This will execute unit tests for all installed components, e.g. solvers, robot models, etc...
+from the library's build folder. This will execute unit tests for all installed components, e.g., solvers, robot models, etc.
 
 # WBC Library Tutorials
 

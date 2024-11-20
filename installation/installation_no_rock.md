@@ -2,7 +2,7 @@ For Ubuntu 20.04/22.04
 
 ### Basic Install
 
-This will install the WBC core library with a single robot model and QP solver respectively. Download this [install script](https://github.com/ARC-OPT/wbc/blob/master/scripts/install.sh?raw=1), store it in a folder of your choice (e.g., arc-opt) and execute it:
+This will install the WBC core library with a single robot model and QP solver respectively. Download this [install script](https://github.com/ARC-OPT/wbc/blob/master/scripts/install.sh?raw=1), store it in a folder of your choice (e.g., `arc-opt`), and execute it:
 
 ```
 mkdir ~/arc-opt && cd ~/arc-opt
@@ -11,7 +11,7 @@ sh install.sh
 ```
 ### Full Install
 
-This will install the WBC core library alongside with different robot models, solvers and python bindings. Download this [install script](https://github.com/ARC-OPT/wbc/blob/master/scripts/full_install.sh?raw=1), store it in a folder of your choice (e.g., arc-opt) and execute it:
+This will install the WBC core library alongside with different robot models, solvers, and Python bindings. Download this [install script](https://github.com/ARC-OPT/wbc/blob/master/scripts/full_install.sh?raw=1), store it in a folder of your choice (e.g., `arc-opt`), and execute it:
 
 ```
 mkdir ~/arc-opt && cd ~/arc-opt
@@ -53,11 +53,11 @@ sudo make -j8 install && cd ../..
 
 ### Known Issues
 
-- If shared libraries cannot be found when testing WBC, please update the LD_LIBRARY_PATH:
+- If shared libraries cannot be found when testing WBC, please update the `LD_LIBRARY_PATH`:
 ```
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
 ```
-- The python bindings are currently not installed as python package, thus the PYTHONPATH has to be adapted, so that they can be fpund by python:
+- The Python bindings are currently not installed as a Python package, thus the `PYTHONPATH` environment variable has to be adapted, so that they can be found by Python:
 ```
 export PYTHONPATH=$PYTHONPATH:/usr/local/lib/pythonX.X/site_packages
 ```
