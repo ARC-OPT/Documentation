@@ -70,14 +70,17 @@ from the library's build folder. This will execute unit tests for all installed 
 2. [Using a different solver](tutorials/vel_using_different_solver.md)
 3. [Adapting task and joint weights](tutorials/vel_adapt_task_weights.md)
 4. [Task hierarchies](tutorials/vel_task_hierarchies.md)
-5. [Serial vs. Hybrid robots](tutorials/vel_serial_vs_hybrid_robots.md)
-6. [Floating base robots](tutorials/vel_floating_base_robots.md)
+5. [Floating base robots](tutorials/vel_floating_base_robots.md)
+
+### Serial vs. Hybrid Robots
+  
+5. [RH5 single leg example](tutorials/vel_serial_vs_hybrid_robots.md)
+7. [RH5v2 dual arm serial](tutorials/acc_serial_robot.md)
+8. [RH5v2 dual arm hybrid](tutorials/acc_hybrid_robot.md)
 
 ### Acceleration-based WBC
-  
-7. [Serial Robot](tutorials/acc_serial_robot.md)
-8. [Hybrid Robot](tutorials/acc_hybrid_robot.md)
 
+9. [Dynamic Cartesian Position Control](tutorials/acc_kuka_iiwa.md)
 
 # ROS 2 Tutorials
 1. [Introduction](tutorials/ros2_introduction.md)
