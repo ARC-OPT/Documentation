@@ -14,5 +14,5 @@ WBC is integrated with [ros2_control](https://control.ros.org/master/index.html)
 ## wbc_ros - Parameters
 Check out the examples, e.g., [Cartesian Space Example](https://github.com/ARC-OPT/wbc_ros/blob/main/config/cartesian_space_example/iiwa_controllers.yaml)
 
-[[Previous Tutorial]](https://arc-opt.github.io/Documentation/tutorials/vel_hybrid_robot.html)[[Back to Main Page]](https://arc-opt.github.io/Documentation)[[Next Tutorial]](https://arc-opt.github.io/Documentation/tutorials/ros2_cartesian_control.html)
+[[Previous Tutorial]](https://arc-opt.github.io/Documentation/tutorials/acc_kuka_iiwa.html)[[Back to Main Page]](https://arc-opt.github.io/Documentation)[[Next Tutorial]](https://arc-opt.github.io/Documentation/tutorials/ros2_cartesian_control.html)
 
