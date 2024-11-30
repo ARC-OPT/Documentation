@@ -75,8 +75,8 @@ from the library's build folder. This will execute unit tests for all installed 
 ### Serial vs. Hybrid Robots
   
 5. [RH5 single leg example](tutorials/vel_serial_vs_hybrid_robots.md)
-7. [RH5v2 dual arm serial](tutorials/acc_serial_robot.md)
-8. [RH5v2 dual arm hybrid](tutorials/acc_hybrid_robot.md)
+7. [RH5v2 dual arm serial](tutorials/vel_serial_robot.md)
+8. [RH5v2 dual arm hybrid](tutorials/vel_hybrid_robot.md)
 
 ### Acceleration-based WBC
 
