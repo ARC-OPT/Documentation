@@ -24,4 +24,4 @@ as it does not capture the correct dynamics of the
 parallel mechanisms.
 4) It leads to custom and complicated robot control software stacks, which may be hard to maintain and reuse.
 
-[[Previous Tutorial]](https://arc-opt.github.io/Documentation/tutorials/vel_task_hierarchies.html)[[Back to Main Page]](https://arc-opt.github.io/Documentation)[[Next Tutorial]](https://arc-opt.github.io/Documentation/tutorials/vel_floating_base_robots.html)
+[[Previous Tutorial]](https://arc-opt.github.io/Documentation/tutorials/vel_floating_base_robots.html)[[Back to Main Page]](https://arc-opt.github.io/Documentation)[[Next Tutorial]](https://arc-opt.github.io/Documentation/tutorials/vel_serial_robot.html)
