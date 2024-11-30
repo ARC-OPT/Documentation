@@ -30,4 +30,6 @@ Joint 5 deactivated (joint weight 5 set to zero): <br>
    <source type="video/mp4"  src="https://raw.githubusercontent.com/ARC-OPT/ARC-OPT/master/videos/joint_weights_2.mp4"/>
 </video>
 
+Please note that the visualization has been done with an external tool and is not part of ARC-OPT. If you want to visualize your system, please refer to the [ROS 2 tutorials](https://arc-opt.github.io/Documentation/tutorials/ros2_introduction.html), which use rviz as visualization.
+
 [[Previous Tutorial]](https://arc-opt.github.io/Documentation/tutorials/vel_using_different_solver.html)[[Back to Main Page]](https://arc-opt.github.io/Documentation)[[Next Tutorial]](https://arc-opt.github.io/Documentation/tutorials/vel_task_hierarchies.html)
