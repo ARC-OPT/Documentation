@@ -17,4 +17,6 @@ Fixed joint 5 position on lower priority:<br>
    <source type="video/mp4"  src="https://raw.githubusercontent.com/ARC-OPT/ARC-OPT/master/videos/task_hierarchies_2.mp4"/>
 </video>
 
-[[Previous Tutorial]](https://arc-opt.github.io/Documentation/tutorials/vel_adapt_task_weights.html)[[Back to Main Page]](https://arc-opt.github.io/Documentation)[[Next Tutorial]](https://arc-opt.github.io/Documentation/tutorials/vel_serial_vs_hybrid_robots.html)
+[[Previous Tutorial]](https://arc-opt.github.io/Documentation/tutorials/vel_adapt_task_weights.html)[[Back to Main Page]](https://arc-opt.github.io/Documentation)[[Next Tutorial]](https://arc-opt.github.io/Documentation/tutorials/vel_floating_base_robots.html)
+
+
