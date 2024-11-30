@@ -8,4 +8,4 @@ cd build/tutorials/rh5v2
 
 This example shows velocity-based WBC on a serial dual-arm robot (fixed base). The outputs are the indepnendend joint velocity that comply with the given task space velocities.
 
-[[Previous Tutorial]](https://arc-opt.github.io/Documentation/tutorials/vel_floating_base_robots.html)[[Back to Main Page]](https://arc-opt.github.io/Documentation)[[Next Tutorial]](https://arc-opt.github.io/Documentation/tutorials/acc_hybrid_robot.html)
+[[Previous Tutorial]](https://arc-opt.github.io/Documentation/tutorials/vel_serial_vs_hybrid_robots.html)[[Back to Main Page]](https://arc-opt.github.io/Documentation)[[Next Tutorial]](https://arc-opt.github.io/Documentation/tutorials/vel_hybrid_robot.html)
