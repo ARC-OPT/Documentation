@@ -9,4 +9,4 @@ cd build/tutorials/rh5
 
 Here, we use the KDL-based robot model and configure a floating base, i.e., a 6-DOF virtual linkage, which attaches the robot base to the world frame. Note that the robot is underactuated in this case, as we can only control the floating base joints indirectly by controlling the feet contacts with the ground.
 
-[[Previous Tutorial]](https://arc-opt.github.io/Documentation/tutorials/vel_serial_vs_hybrid_robots.html)[[Back to Main Page]](https://arc-opt.github.io/Documentation)[[Next Tutorial]](https://arc-opt.github.io/Documentation/tutorials/acc_serial_robot.html)
+[[Previous Tutorial]](https://arc-opt.github.io/Documentation/tutorials/vel_task_hierarchies.html)[[Back to Main Page]](https://arc-opt.github.io/Documentation)[[Next Tutorial]](https://arc-opt.github.io/Documentation/tutorials/vel_serial_vs_hybrid_robots.html)
