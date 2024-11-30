@@ -19,4 +19,6 @@ This tutorial is identical to tutorial 01, except that we use a different solver
 
 In the video, again the upper plot shows the joint velocity of joint 4 (elbow), the lower plot shows the setpoint and actual position (only z-axis). As it can be seen the joint velocity of joint 4 is now bounded to the maximum joint velocity set in the URDF file (approx. 1.3 rad/s).
 
+Please note that the visualization has been done with an external tool and is not part of ARC-OPT. If you want to visualize your system, please refer to the [ROS 2 tutorials](https://arc-opt.github.io/Documentation/tutorials/ros2_introduction.html), which use rviz as visualization.
+
 [[Previous Tutorial]](https://arc-opt.github.io/Documentation/tutorials/vel_introductory_example.html)[[Back to Main Page]](https://arc-opt.github.io/Documentation)[[Next Tutorial]](https://arc-opt.github.io/Documentation/tutorials/vel_adapt_task_weights.html)
