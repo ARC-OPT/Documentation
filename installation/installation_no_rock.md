@@ -55,9 +55,10 @@ sudo make -j8 install && cd ../..
 
 Note that the Python3 bindings are not maintained as regularly as the core WBC lib.
 
+```
 wget https://raw.githubusercontent.com/ARC-OPT/wbc_py/master/scripts/install.sh
 sh install.sh
-
+```
 
 ### Known Issues
 
