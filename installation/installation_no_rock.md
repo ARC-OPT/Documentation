@@ -51,6 +51,14 @@ cmake .. -DUSE_HYRODYN=1
 sudo make -j8 install && cd ../..
 ```
 
+### (Optional) Python Bindings
+
+Note that the Python3 bindings are not maintained as regularly as the core WBC lib.
+
+wget https://raw.githubusercontent.com/ARC-OPT/wbc_py/master/scripts/install.sh
+sh install.sh
+
+
 ### Known Issues
 
 - If shared libraries cannot be found when testing WBC, please update the `LD_LIBRARY_PATH`:
