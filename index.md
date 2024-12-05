@@ -4,8 +4,7 @@
 
 ### Whole-Body Control
 
-Whole Body Control (WBC) is an approach for specifying and controlling complex robotic tasks
-[Synthesis and Control of Whole-Body Behaviors in Humanoid Systems](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.73.8747&rep=rep1&type=pdf).
+Whole Body Control (WBC) is an approach for specifying and controlling complex robotic tasks.
 
 <img src="images/wbc_principle.svg" alt="drawing" width="600"/>
 
@@ -20,9 +19,7 @@ In each control cycle ...
 WBC is used for...
  
   * controlling robots with redundant degrees of freedom, like humanoids or other legged robots with floating base, but also fixed-base systems like mobile manipulators, dual-arm systems or even simple manipulators. In general, the number of robot dof can be arbitrarily high like >50. 
-
   * controlling multiple tasks simultaneously while taking into account the physical constraints of the robot. E.g., on a humanoid robot do ... (1) keep balance (2) Grasp an object with one arm (3) maintaining an upright body posture (4) Consider the joint torque limits, etc... 
-
   * reactive robot control, i.e., it does not involve any motion planning or trajectory optimization. However, it can be used to stabilize trajectories coming from a motion planner or trajectory optimizer and integrate them with other objectives and physical constraints of the robot. Other than in MPC, the optimization horizon has the size 1, i.e., there is no prediction model involved. 
 
 ###  ARC-OPT: Motivation
@@ -62,7 +59,7 @@ make test
 ```
 from the library's build folder. This will execute unit tests for all installed components, e.g., solvers, robot models, etc.
 
-# WBC Library Tutorials
+# Tutorials
 
 ### Velocity-based WBC
  
@@ -82,13 +79,13 @@ from the library's build folder. This will execute unit tests for all installed 
 
 9. [Dynamic Cartesian Position Control](tutorials/acc_kuka_iiwa.md)
 
-# ROS 2 Tutorials
+### ROS 2 Tutorials
 1. [Introduction](tutorials/ros2_introduction.md)
 2. [Cartesian Space Example](tutorials/ros2_cartesian_control.md)
 3. [Joint Space Example](tutorials/ros2_joint_space_control.md)
 4. [Nullspace Example](tutorials/ros2_nullspace_control.md)
 
-# Python 3 Bindings
+### Python 3 Tutorials
 
 The most important functionalities of the WBC library have Python 3 bindings (see [here](https://github.com/ARC-OPT/wbc_py)). Note that the Python 3 bindings are not maintained as rigurously as the core WBC library.
 
