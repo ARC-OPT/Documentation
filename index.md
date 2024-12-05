@@ -1,4 +1,8 @@
-[Code API](https://arc-opt.github.io/wbc/index.html)  | [WBC Library](https://github.com/ARC-OPT/wbc/)   | [WBC ROS](https://github.com/ARC-OPT/wbc_ros/) 
+[Code API](https://arc-opt.github.io/wbc/index.html)  | [WBC Library](https://github.com/ARC-OPT/wbc/)   | [ROS 2 Interface](https://github.com/ARC-OPT/wbc_ros/) 
+
+# Installation
+ * [WBC Library](installation/installation_no_rock.md)
+ * [ROS 2 Interface](installation/installation_ros2.md)
 
 # Introduction
 
@@ -49,10 +53,6 @@ The design of WBC library separates the whole-body controller into 4 main buildi
   * **Constraint**: Constraints describe the physical limitations of the robot and/or the environment, e.g., torque limits, ground friction or self-collisions. Each constraint inherits from [core/Constraint](https://github.com/ARC-OPT/wbc/blob/master/src/core/Constraint.hpp). Currently the constraints a hard-coded in the Scene implementation. Thus, if you want to use different constraints, you will have to implement a new Scene. 
 * **Robot Model**: The robot model computes the kinematic and dynamic information that the scene requires to set up the optimization problem. This includes different Jacobians and their derivatives, frame transformations, gravity forces and torques, as well as mass-inertia matrices. The robot model is updated in each control cycle with the current joint status (position, velocity, acceleration) of the robot. Each robot model inherits from [core/RobotModel](https://github.com/ARC-OPT/wbc/blob/master/src/core/RobotModel.hpp). The available robot models can be found [here](https://github.com/ARC-OPT/wbc/tree/master/src/robot_models).
 * **Solver**:  The solver is a generic component that solves a variant of a QP. The input is a QP, the output is a velocity, acceleration or torque command in configuration space of the robot. Each solver inherits from [core/QPSolver](https://github.com/ARC-OPT/wbc/blob/master/src/core/QPSolver.hpp). The available solver can be found [here](https://github.com/ARC-OPT/wbc/tree/master/src/solvers). 
-
-# Installation
- * [WBC Library](installation/installation_no_rock.md)
- * [ROS 2 Interface](installation/installation_ros2.md)
 
 # Testing
 
