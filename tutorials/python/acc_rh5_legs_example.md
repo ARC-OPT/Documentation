@@ -9,4 +9,4 @@ python3 rh5_legs_floating_base.py
 
 This tutorial shows how to set up a legged robot (floating base) to perform a simple squatting motion using acceleration-level WBC.
 
-[[Previous Tutorial]](https://arc-opt.github.io/Documentation/tutorials/vel_introductory_example.html)[[Back to Main Page]](https://arc-opt.github.io/Documentation)
+[[Previous Tutorial]](https://arc-opt.github.io/Documentation/tutorials/python/vel_introductory_example.html)[[Back to Main Page]](https://arc-opt.github.io/Documentation)
