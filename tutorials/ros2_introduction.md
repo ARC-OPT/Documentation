@@ -1,5 +1,7 @@
 # WBC ROS 2 - Introduction
 
+Note that the ROS 2 interface for the WBC library can be found [here](https://github.com/ARC-OPT/wbc_ros/)
+
 WBC is integrated with [ros2_control](https://control.ros.org/master/index.html). The Whole-Body Controller itself, as well as every task space controller, is implemented as [ROS 2 controllers](https://control.ros.org/master/doc/ros2_controllers/doc/controllers_index.html), inheriting from [ChainableControllerInterface](https://github.com/ros-controls/ros2_control/blob/master/controller_interface/include/controller_interface/chainable_controller_interface.hpp). 
 
 ## wbc_ros - Published Topics
