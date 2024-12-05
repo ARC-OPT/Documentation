@@ -1,3 +1,5 @@
+Note that the ROS 2 interface for the WBC library can be found [here](https://github.com/ARC-OPT/wbc_ros/)
+
 ## Install using ROS 2
 
 1. Install ROS 2 Humble as described [here](https://docs.ros.org/en/humble/Installation.html), base install + dev_tools are mimimum required
