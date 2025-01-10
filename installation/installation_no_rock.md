@@ -1,4 +1,4 @@
-For Ubuntu 20.04/22.04
+For Ubuntu 22.04/22404
 
 ### Basic Install
 
